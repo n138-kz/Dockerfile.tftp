@@ -1,0 +1,10 @@
+services:
+   tftp_server:
+      image: danrue/tftpd-hpa
+      ports:
+         - "69:69/udp"
+      volumes:
+         - type: bind
+           source: /mnt/edisk01/tftp
+           target: /srv/tftp
+      restart: unless-stopped
