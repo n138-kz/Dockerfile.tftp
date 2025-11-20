@@ -2,10 +2,10 @@ services:
    tftp_server:
       image: danrue/tftpd-hpa
       ports:
-         - "69:69/udp"
+         - "${publish_ports:-69}:69/udp"
       volumes:
          - type: bind
-           source: .
+           source: ${publish_directory:-.}
            target: /srv/tftp
-           read_only: true
+           read_only: ${publish_directory_ro:-true}
       restart: unless-stopped
