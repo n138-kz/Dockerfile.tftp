@@ -5,6 +5,7 @@ services:
          - "69:69/udp"
       volumes:
          - type: bind
-           source: /mnt/edisk01/tftp
+           source: .
            target: /srv/tftp
+           read_only: true
       restart: unless-stopped
