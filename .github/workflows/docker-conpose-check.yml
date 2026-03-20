@@ -7,5 +7,5 @@ jobs:
     runs-on:
       - ubuntu-latest
     steps:
-      - name: ""
-        run: echo 1
+      - name: "compose config"
+        run: docker compose config
