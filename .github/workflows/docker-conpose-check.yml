@@ -1,0 +1,14 @@
+name: Docker Setup Compose
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on:
+      - ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: "compose config"
+        run: docker compose config
+      - name: "compose up"
+        run: docker compose up -d

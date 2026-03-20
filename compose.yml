@@ -1,3 +1,4 @@
+name: service
 services:
    tftp_server:
       image: danrue/tftpd-hpa
@@ -5,7 +6,7 @@ services:
          - "${publish_ports:-69}:69/udp"
       volumes:
          - type: bind
-           source: ${publish_directory:-.}
+           source: ${publish_directory:-tftp}
            target: /srv/tftp
            read_only: ${publish_directory_ro:-true}
       restart: unless-stopped
