@@ -1,0 +1,11 @@
+name: Docker Setup Compose
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    steps:
+      - name: ""
+        run: echo 1
