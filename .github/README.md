@@ -44,6 +44,15 @@
 - [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com)Dockerfile](https://github.com/n138-kz/Dockerfile/)
 - [![](https://www.google.com/s2/favicons?size=64&domain=https://github.com)Dockerfile.tftp](https://github.com/n138-kz/Dockerfile.tftp/)
 
+## .env file
+
+| Key | Default Value | Remarks |
+| --- | ------------- | ------- |
+| `publish_ports` | `69/udp` | Port番号/プロトコル |
+| `publish_directory` | `tftp` | 公開するディレクトリ（フォルダ） |
+| `publish_directory_ro` | `true` | 読み取り専用にするかどうか，<br>読み書き可にする場合 `false` にする |
+
+
 ## License
 
 [Copyright (c) 2025 Yuu Komiya (n138), Under MIT License](LICENSE)  
