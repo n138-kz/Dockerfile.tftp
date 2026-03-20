@@ -8,6 +8,7 @@ jobs:
       - ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - run: pwd;tree
       - name: "compose config"
         run: docker compose config
+      - name: "compose up"
+        run: docker compose up -d
