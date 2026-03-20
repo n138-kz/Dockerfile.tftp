@@ -1,3 +1,4 @@
+name: service
 services:
    tftp_server:
       image: danrue/tftpd-hpa
