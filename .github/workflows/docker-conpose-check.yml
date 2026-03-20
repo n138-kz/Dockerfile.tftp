@@ -7,5 +7,6 @@ jobs:
     runs-on:
       - ubuntu-latest
     steps:
+      - run: tree
       - name: "compose config"
         run: docker compose config
