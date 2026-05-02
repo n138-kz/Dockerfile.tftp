@@ -1,4 +1,4 @@
-name: service
+name: tftpd-hpa
 services:
    tftp_server:
       image: danrue/tftpd-hpa
